@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AzaHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="1.png">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>AzaHub</h1>
+            <h3>Сайт для ДЗ</h3>
+        </div>
+        
+        <div class="profile">
+            
+        </div>
+
+        <div class="posts" id="posts-container">
+           
+        </div>
+
+        <div class="form">
+            
+            
+            <label for="nameInput">Ник:</label>
+            <input type="text" id="nameInput" placeholder="ИМЯ">
+            
+            <label for="imgInput">Ваш аватар:</label>
+            <input type="text" id="imgInput" placeholder="Ссылку на изображение">
+            
+            <label for="descriptionInput">Описание:</label>
+            <input type="text" id="descriptionInput" placeholder="Что у вас нового?">
+            
+            <label for="idInput">№</label>
+            <input type="text" id="idInput" placeholder="Какой пост поменять?">
+            
+            <button onclick="updateData()">Изменит</button>
+            
+            <hr>
+            
+            <label for="newPostNameInput">Ник:</label>
+            <input type="text" id="newPostNameInput" placeholder="ИМЯ">
+            
+            <label for="newPostImgInput">Ваш аватар:</label>
+            <input type="text" id="newPostImgInput" placeholder="Ссылку на изображение">
+            
+            <label for="newPostDescriptionInput">Описание:</label>
+            <input type="text" id="newPostDescriptionInput" placeholder="Что у вас нового?">
+            
+            <button onclick="createPost()">Новый пост</button>
+            <button onclick="scrollToBottom()">В самый низ</button>
+            
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <button class="scroll" onclick="scrollToTop()">На вверх</button>
+</body>
+</html>
